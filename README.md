@@ -22,7 +22,6 @@ Since this system is for general use, solutions like ROI are not effective since
 
 ### Data Collection and Preparation  
 The dataset used for this project consists of a combination of benchmark datasets for people detection and real-world service queue videos.  
-![DBSCAN reference](https://github.com/user-attachments/assets/1c28f252-cedd-406b-89a4-691726392208)
 
 **Dataset Composition:**  
 | Dataset | Type | Samples | Use Case |
