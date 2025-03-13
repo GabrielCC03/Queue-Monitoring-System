@@ -1,5 +1,4 @@
-![DBSCAN reference](https://github.com/user-attachments/assets/ede33a20-6ae1-4f21-b620-8194d823c1c5)# Queue-Monitoring-System
-**Real-Time Queue Detection and Waiting Time Estimation Using Object Tracking and Clustering**
+#**Real-Time Queue Detection and Waiting Time Estimation Using Object Tracking and Clustering**
 
 ## Project Overview  
 Efficient queue management is a critical challenge in high-traffic environments. This project presents a real-time queue monitoring system that employs **YOLOv8** object detection to monitor queues, count individuals in line, and estimate waiting times dynamically.
