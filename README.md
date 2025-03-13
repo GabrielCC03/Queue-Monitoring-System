@@ -58,7 +58,7 @@ Preprocessing techniques were applied to optimize the input frames for detection
 Since YOLO primarily detects people without differentiating queue members from bystanders, a **clustering-based approach** was implemented to isolate queue members and ensure accurate waiting time estimations.  
 
 **Techniques Considered:**  
-- **DBSCAN Clustering:** Filtered out non-queue individuals based on spatial proximity.This clustering algorithm is helpful for finding a cluster containing the majority of the people(the queue) and just counting the people that are within that cluster. In this way, the time estimation and the count of people should not be affected by people in the frame that is not in the queue.
+- **DBSCAN Clustering:** Filtered out non-queue individuals based on spatial proximity. This clustering algorithm is helpful for finding a cluster containing the majority of the people (the queue) and just counting the people that are within that cluster. In this way, the time estimation and the count of people should not be affected by people in the frame that is not in the queue.
 ![plot of DBSCAN](https://github.com/user-attachments/assets/213f8df4-da1a-494e-b60b-0d2bcb085520)
 
 - **Distance-Based Counting:** Applied bounding box proximity to determine queue membership.  
@@ -77,12 +77,5 @@ The model was trained for **10 epochs** to fine-tune YOLOv8 for queue detection 
 - **Mean Absolute Error (MAE) and Mean Squared Error (MSE)** – Evaluated waiting time estimation error.
 - 
 ![train_results](https://github.com/user-attachments/assets/5e439684-4e19-4188-a9fc-094caa7b042b)
-**Training Results:**  
-| Model | MAE (± sec) | MSE | Accuracy (%) |
-|--------|---------|------|----------|
-| Pre-trained YOLOv8 | 1.61 | 4.27 | 15.5% |
-| Fine-Tuned YOLOv8 | 1.61 | 4.27 | 15.5% |
-| Fine-Tuned + Preprocessing | **1.58** | **4.21** | **16.28%** |
-| Fine-Tuned + Queue Clustering | 2.84 | 15.11 | 15.12% |
 
 
