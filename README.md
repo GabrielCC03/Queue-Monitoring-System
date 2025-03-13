@@ -1,4 +1,4 @@
-#**Real-Time Queue Detection and Waiting Time Estimation Using Object Tracking and Clustering**
+# **Real-Time Queue Detection and Waiting Time Estimation Using Object Tracking and Clustering**
 
 ## Project Overview  
 Efficient queue management is a critical challenge in high-traffic environments. This project presents a real-time queue monitoring system that employs **YOLOv8** object detection to monitor queues, count individuals in line, and estimate waiting times dynamically.
