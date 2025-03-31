@@ -58,6 +58,10 @@ Since YOLO primarily detects people without differentiating queue members from b
 
 **Techniques Considered:**  
 - **DBSCAN Clustering:** Filtered out non-queue individuals based on spatial proximity. This clustering algorithm is helpful for finding a cluster containing the majority of the people (the queue) and just counting the people that are within that cluster. In this way, the time estimation and the count of people should not be affected by people in the frame that is not in the queue.
+
+![DBSCAN reference](https://github.com/user-attachments/assets/31b4fc98-133f-49e1-bd51-3ee2b4776548)
+Represented as:
+
 ![plot of DBSCAN](https://github.com/user-attachments/assets/213f8df4-da1a-494e-b60b-0d2bcb085520)
 
 - **Distance-Based Counting:** Applied bounding box proximity to determine queue membership.  
